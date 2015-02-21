@@ -1,5 +1,5 @@
 #file name: hang_man.py
-#Contributors: Laura and Yarely, Anita & Naelin 2/12 
+#Contributors: Laura and Yarely, Anita & Naelin 2/12 , Lesly and Laura 2/20
 #Last Modified: 02/12/2015
 #Description: Creates a hangman game
 
@@ -55,31 +55,41 @@ def enter_word(array, word_len):
 	user_input = raw_input("Enter word of length" + word_len)
 	array.append(user_input)
 
-def initBoard(word_len)
-	for x in range word_len
-		board[] = board.append('_')
+def initBoard(word_len):
+	x = 0
+	board = []
+	for x in range (word_len):
+		board = board.append('_')
 	return board
 
 def guessCharacter(targetWord):
 	numOfGuesses += 0
 	guess = raw_input("Enter a letter: ")
-	numOfGuesses += 1
-	guessesSoFar[] = guessesSoFar.append(guess)
-	index = 0
+	numOfGuesses += 1 #counter for the number of guesses
+	guessesSoFar = guessesSoFar.append(guess)
+	index = 0 #index initialized
 	charFound = False
+	numOfWrongGuess = 0 #counter for the wrong guesses
+	
 	for char in targetWord:	
 		if guess == char:
-			targetWord[index] = guess
+			#targetWord[index] = guess #why?
 			charFound = True
+			board[index] = guess 
 		index += 1
 	
 	if charFound == False:
+		numOfWrongGuess += 1
 		print "Letter not found"
 		
-
+	
+#function will display the board and hangman
+def displayBoard(word_len):
+	for i in range(word_len):
+		board
+	
 		
-		
-def playHangman():
+	
 	
 	
 # Ask user to enter desired length for word
@@ -90,6 +100,7 @@ def main():
 	targetWord = find_word(word_len)
 	
 	board = initBoard(word_len)
+	guessCharacter(targetWord)
 	
 	
 	
