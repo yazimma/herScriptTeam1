@@ -3,6 +3,9 @@
 #Last Modified: 02/12/2015
 #Description: Creates a hangman game
 
+#Laura and Lesly focused on debugging the current code. We intended to create a function 
+#that displayed the board with the guesses and the hangman 
+
 # According to user length choice, will find word in list
 def find_word(word_len):
 	#TODO create words for each list
