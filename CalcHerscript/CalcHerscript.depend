@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1429227444 source:/home/yaya/Desktop/css 2a/CalcHerscript/Calc.cpp
+	"Calc.h"
+
+1429227444 /home/yaya/Desktop/css 2a/CalcHerscript/Calc.h
+
+1429227444 source:/home/yaya/Desktop/css 2a/CalcHerscript/CalcDriver.cpp
+	"Calc.h"
+	<iostream>
+
