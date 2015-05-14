@@ -1,7 +1,7 @@
-#file name: hang_man.py
-#Contributors: Laura and Yarely, Anita & Naelin 2/12 , Lesly and Laura 2/20
-#Last Modified: 02/12/2015
-#Description: Creates a hangman game
+# Filename: hang_man.py
+# Contributors: Laura and Yarely, Anita & Naelin, Lesly & Laura
+# Last modified: 02/20/2015
+# Description: Creates a hangman game
 
 #Laura and Lesly focused on debugging the current code. We intended to create a function 
 #that displayed the board with the guesses and the hangman 
@@ -91,9 +91,6 @@ def displayBoard(word_len):
 	for i in range(word_len):
 		board
 	
-		
-	
-	
 	
 # Ask user to enter desired length for word
 def main():
@@ -104,6 +101,8 @@ def main():
 	
 	board = initBoard(word_len)
 	guessCharacter(targetWord)
+
+main()
 	
 	
 	
